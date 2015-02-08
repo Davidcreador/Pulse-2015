@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head lang"es">
+<html lang"es">
+<head>
 	<meta charset"utf-8">
-	<meta description"Site Demo - Lerning HTML and CSS">
+	<meta name="description" content="Site Demo - Lerning HTML and CSS"/>
 	<title>Pulse 2015 Demo</title> 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	
-	<header>
-		<figure id="avatar">
-			<img src="logo.png">
-		</figure>
-		<h1>Pulse 2015 DEMO</h1>
-	</header>
-
 	<nav>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Work</a></li>
 			<li><a href="#">Contact</a></li>
-			
+			<li id="publicar_nav">
+				<a href="#">Publish</a>
+			</li>
 		</ul>
 	</nav>
-
+	<!-- HEADER -->
+	<header>
+		<figure id="logo">
+			<img src="img/logo.png">
+		</figure>
+		<h1>Pulse 2015 DEMO</h1>
+		<figure id="avatar">
+			<img src="avatar.jpg" />
+		</figure>
+	</header>
+	<!-- SECTION 1 -->
 	<section id="content">
 		<article class="item">
 			<figure class="imagen_item">
-				<img src="img-1.jpg">
+				<img src="img/img-1.jpg">
 			</figure>
 			<h2 class="Titulo_item">
-				<a href="#">Título del articulo</a>
+				<a href="#">Articulo</a>
 			</h2>
 			<p class="autor_item">
 				por<a href="#">David Pastor</a>
@@ -38,12 +45,12 @@
 			<div class="datos_item">
 				<a href="#" class="tag_item">pony</a>
 				<span class="fecha_item">
-					hace<strong>5</strong>minutos
+					hace <strong>5</strong> min
 				</span>
 			</div>
 			<div class="votacion">
 				<a href="#" class="up">720</a>
-				<a href="#" class="down">300</a>
+				<a href="#" class="down">30</a>
 				<a href="#" class="comentarios_item">69</a>
 				<a href="#" class="guardar_item"></a>
 			</div>
@@ -54,7 +61,9 @@
 		<p>
 			<strong>Powered by Me</strong>
 		</p>
-		<p>Pulse 2015 Demo</p>
+		<p>
+			Pulse 2015 Demo
+		</p>
 	</footer>
 
 </body>
