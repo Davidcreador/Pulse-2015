@@ -4,7 +4,7 @@ a {
 
 body {
 	background: #eee;
-	font-family: 'Open Sans'
+	font-family: "Open Sans";
 	font-size: 16px;
 }
 
@@ -115,7 +115,9 @@ nav ul #publicar_nav a{
 #content .item {
 	background: #fff;
 	border-bottom: 3px solid #22BCE0;
-	overflow: hidden;
+	position: relative;
+	min-height: 128px;
+	margin-bottom: 3em;
 }
 
 #content .item .imagen_item {
@@ -136,7 +138,7 @@ nav ul #publicar_nav a{
 	color: #aaa;
 }
 
-#content .item .tag_item {
+#content .item .datos_item .tag_item {
 	background: #F4502A;
 	color: white;
 	float: left;
@@ -153,6 +155,7 @@ nav ul #publicar_nav a{
 #content .item .titulo_item {
 	font-size: 1.2em;
 	font-style: italic;
+	padding-top: 1em 1em 0 0;
 }
 
 #content .item .titulo_item a {
@@ -160,6 +163,20 @@ nav ul #publicar_nav a{
 	text-decoration: none;
 }
 
+#content .item .votacion {
+	background: #fff;
+	border-radius: 0 0 0.5em 0.5em;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	position: absolute;
+	top: 100%;
+	left: 5%;
+	width: 90%;
+}
+#content .item .votacion .comentarios_item,
+#content .item .votacion .guardar_item {
+	float: right;
+}
 
 
 
